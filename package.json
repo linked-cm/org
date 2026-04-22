@@ -11,15 +11,15 @@
     "url": ""
   },
   "version": "1.0.0",
-  "lincd": true,
+  "linkedPackage": true,
   "main": "lib/index.js",
   "types": "dist/lincd-org.d.ts",
   "license": "ISC",
   "scripts": {
-    "start": "npm exec lincd dev",
-    "build": "npm exec lincd build",
-    "prepublishOnly": "npm exec lincd build production",
-    "postpublish": "npm exec lincd register"
+    "start": "npm exec linked dev",
+    "build": "npm exec linked build",
+    "prepublishOnly": "npm exec linked build production",
+    "postpublish": "npm exec linked register"
   },
   "keywords": [
     "lincd",
@@ -58,8 +58,8 @@
     "@_linked/schema": "*"
   },
   "devDependencies": {
+    "@_linked/cli": "^1.2",
     "@types/node": "^22.13.14",
-    "lincd-cli": "^1.2",
     "tsconfig-to-dual-package": "^1.2.0",
     "typescript": "5.7.3"
   }
