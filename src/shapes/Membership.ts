@@ -56,12 +56,9 @@ declare module '@_linked/schema/shapes/Person' {
   }
 }
 
-//TODO: support foaf:Agent
-// Person.addProperty("organizations",{
-//   path:[org.hasMembership,org.organization],
-// });
-// declare module '@_linked/schema/shapes/Person' {
-//   interface Person {
-//     readonly organizations: ShapeSet<Organization>;
-//   }
-// }
+// A person → organization sequence path (org:hasMembership / org:organization) is now
+// resolvable by core (plan-012), but Workspace-by-member queries use the inverse
+// `Workspace.memberships` ({inv: org.organization}) instead, so no `Person.organizations`
+// property is needed here. Add one if a forward person→orgs traversal is wanted:
+//   createPropertyShape({path: [org.hasMembership, org.organization], shape: Organization},
+//     'organizations', shacl.IRI, Person);
