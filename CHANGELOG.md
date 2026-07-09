@@ -1,5 +1,11 @@
 # @\_linked/org
 
+## 1.0.2
+
+### Patch Changes
+
+- [#3](https://github.com/linked-cm/org/pull/3) [`997ce76`](https://github.com/linked-cm/org/commit/997ce7647c5d194193d6d0e85d9d731b5ab26498) Thanks [@flyon](https://github.com/flyon)! - loadData: ESM-only JSON import — drop the dead CJS branch, add the `{ with: { type: 'json' } }` import attribute.
+
 ## 1.0.1
 
 ### Patch Changes

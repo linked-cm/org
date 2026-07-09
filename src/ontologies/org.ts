@@ -8,14 +8,8 @@ import * as _this from './org.js';
  * Load the data of this ontology into memory, thus adding the properties of the entities of this ontology to the local graph.
  */
 export var loadData = async () => {
-  if (typeof module !== 'undefined' && typeof exports !== 'undefined') {
-    // CommonJS import
-    return import('../data/lincd-org.json');
-  } else {
-    // ESM import
-    //@ts-ignore
-    return import('../data/lincd-org.json',{ with: { type: "json" } }).then((data) => data.default);
-  }
+  //@ts-ignore
+  return import('../data/lincd-org.json', { with: { type: 'json' } }).then((data) => data.default);
 };
 
 /**
