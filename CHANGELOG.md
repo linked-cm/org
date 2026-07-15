@@ -1,5 +1,11 @@
 # @\_linked/org
 
+## 1.1.0
+
+### Minor Changes
+
+- [`ddadf2b`](https://github.com/linked-cm/org/commit/ddadf2b9da9a5f91afad763ac9bd6c89e0cdec9e) - ESM-only. Dropped the CommonJS build; ships ES modules only (`type: module`, no `require` export condition, no `lib/cjs`). Fixed the root `types` field. CJS consumers on Node 22+ can `require()` it (sync ESM) or use dynamic `import()`.
+
 ## 1.0.2
 
 ### Patch Changes
