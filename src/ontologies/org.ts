@@ -27,6 +27,14 @@ export var Organization: NodeReferenceValue = ns('Organization');
 export var organization: NodeReferenceValue = ns('organization');
 export var member: NodeReferenceValue = ns('member');
 export var role: NodeReferenceValue = ns('role');
+export var OrganizationalUnit: NodeReferenceValue = ns('OrganizationalUnit');
+export var subOrganizationOf: NodeReferenceValue = ns('subOrganizationOf');
+export var linkedTo: NodeReferenceValue = ns('linkedTo');
+export var identifier: NodeReferenceValue = ns('identifier');
+export var memberDuring: NodeReferenceValue = ns('memberDuring');
+export var Post: NodeReferenceValue = ns('Post');
+export var postIn: NodeReferenceValue = ns('postIn');
+export var heldBy: NodeReferenceValue = ns('heldBy');
 
 //An extra grouping object so all the entities can be accessed from the prefix/name
 export const org = {
@@ -36,6 +44,14 @@ export const org = {
   Organization,
   organization,
   member,
-  role
+  role,
+  OrganizationalUnit,
+  subOrganizationOf,
+  linkedTo,
+  identifier,
+  memberDuring,
+  Post,
+  postIn,
+  heldBy
 };
 
