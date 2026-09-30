@@ -1,5 +1,11 @@
 # @\_linked/org
 
+## 1.2.2
+
+### Patch Changes
+
+- [#27](https://github.com/linked-fw/org/pull/27) [`9aa7b91`](https://github.com/linked-fw/org/commit/9aa7b91f94f5063fe970fde0d945b3ec2c2c209a) Thanks [@flyon](https://github.com/flyon)! - Add `shapes/index`, a side-effect-only module that registers every shape this package defines and nothing else (no components, no CSS), so `import '@_linked/org/shapes/index'` loads the shapes in plain node as well as in a bundle. The package entry now imports it instead of listing shapes one by one.
+
 ## 1.2.1
 
 ### Patch Changes
