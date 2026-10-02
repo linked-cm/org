@@ -6,7 +6,7 @@ import {createNameSpace} from '@_linked/core/utils/NameSpace';
  */
 export var loadData = async () => {
   //@ts-ignore
-  return import('../data/lincd-org.json', { with: { type: 'json' } }).then((data) => data.default);
+  return import('../data/org.json', { with: { type: 'json' } }).then((data) => data.default);
 };
 
 /**

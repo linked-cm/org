@@ -14,4 +14,4 @@ import * as terms from './org.js';
 import {loadData, ns} from './org.js';
 import {linkedOntology} from '../package.js';
 
-linkedOntology(terms, ns, 'org', loadData, '../data/lincd-org.json');
+linkedOntology(terms, ns, 'org', loadData, '../data/org.json');
