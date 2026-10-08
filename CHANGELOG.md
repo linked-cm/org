@@ -1,5 +1,11 @@
 # @\_linked/org
 
+## 1.2.4
+
+### Patch Changes
+
+- [#39](https://github.com/linked-fw/org/pull/39) [`5676b74`](https://github.com/linked-fw/org/commit/5676b74973d673cce37298d9be789e68a20d0b8a) Thanks [@flyon](https://github.com/flyon)! - Publish only the files consumers need; the tarball no longer includes `.changeset/`, `.gitattributes`, `.github/`, `renovate.json`, `test/` or tsconfig files.
+
 ## 1.2.3
 
 ### Patch Changes
