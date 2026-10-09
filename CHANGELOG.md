@@ -1,5 +1,11 @@
 # @\_linked/org
 
+## 1.2.5
+
+### Patch Changes
+
+- [#42](https://github.com/linked-fw/org/pull/42) [`ec34902`](https://github.com/linked-fw/org/commit/ec349026117ad39e2c046fe18d6ff7e0dc163bbb) Thanks [@flyon](https://github.com/flyon)! - Build with `linked build` instead of a hand-rolled `tsc` + `copyfiles` script, and drop the `rimraf`/`copyfiles` devDependencies. The published `lib/` output is unchanged.
+
 ## 1.2.4
 
 ### Patch Changes
